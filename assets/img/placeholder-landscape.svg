@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Пустой слот фото, 16 к 9">
+  <rect width="1600" height="1000" fill="#2a3a26"/>
+  <rect x="36" y="36" width="1528" height="928" fill="none" stroke="#4a5c40" stroke-width="2" stroke-dasharray="14 10"/>
+  <g transform="translate(800,440)" fill="none" stroke="#c29a52" stroke-width="6" stroke-linejoin="round">
+    <rect x="-78" y="-50" width="156" height="108" rx="12"/>
+    <path d="M-36 -50 l14 -24 h44 l14 24"/>
+    <circle cx="0" cy="4" r="32"/>
+  </g>
+  <text x="800" y="620" text-anchor="middle" font-family="'Golos Text','Segoe UI',Arial,sans-serif" font-size="34" letter-spacing="4" fill="#c9ccbd">ФОТО ЗАМЕНИТЬ</text>
+  <text x="800" y="672" text-anchor="middle" font-family="'Golos Text','Segoe UI',Arial,sans-serif" font-size="24" fill="#9ba392">16 к 9, от 1600 px по ширине</text>
+</svg>
