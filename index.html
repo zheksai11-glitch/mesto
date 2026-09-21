@@ -126,14 +126,14 @@
               <div class="card__media">
                 <img
                   src="assets/img/placeholder-landscape.svg"
-                  alt="Пустой слот фото коттеджа «Хвоя», заменить"
+                  alt="Пустой слот фото коттеджа «#1, заменить"
                   width="1600"
                   height="1000"
                   loading="lazy"
                 />
               </div>
               <div class="card__body">
-                <h3 class="card__name">Коттедж «Хвоя»</h3>
+                <h3 class="card__name">Коттедж «#1»</h3>
                 <p class="card__meta">До 6 гостей, 3 спальни, терраса с мангалом</p>
                 <p class="card__desc">
                   Отдельный дом у кромки леса. Панорамные окна выходят на
@@ -148,14 +148,14 @@
               <div class="card__media">
                 <img
                   src="assets/img/placeholder-portrait.svg"
-                  alt="Пустой слот фото коттеджа «Река», заменить"
+                  alt="Пустой слот фото коттеджа «#2», заменить"
                   width="1000"
                   height="1333"
                   loading="lazy"
                 />
               </div>
               <div class="card__body">
-                <h3 class="card__name">Коттедж «Река»</h3>
+                <h3 class="card__name">Коттедж «#2»</h3>
                 <p class="card__meta">До 4 гостей, 2 спальни, выход к воде</p>
                 <p class="card__desc">
                   Компактный дом для пары или семьи: спальни с видом на воду,
@@ -169,14 +169,14 @@
               <div class="card__media">
                 <img
                   src="assets/img/placeholder-portrait.svg"
-                  alt="Пустой слот фото беседки «Тень», заменить"
+                  alt="Пустой слот фото беседки «#3», заменить"
                   width="1000"
                   height="1333"
                   loading="lazy"
                 />
               </div>
               <div class="card__body">
-                <h3 class="card__name">Беседка «Тень»</h3>
+                <h3 class="card__name">Беседка «#3»</h3>
                 <p class="card__meta">До 12 гостей, мангал, зона барбекю</p>
                 <p class="card__desc">
                   Крытая беседка под старыми деревьями: длинный стол, мангал и
@@ -320,15 +320,7 @@
 
       <!-- GALLERY -->
       <section class="section section--deep" id="gallery">
-        <div class="container">
-          <div class="section-head" data-reveal>
-            <h2 class="display-2">Галерея</h2>
-            <p class="section-lede lede">
-              Территория, дома и мероприятия. Снимки на этой странице пока
-              заглушки, на запуске их заменят фотографии заказчика.
-            </p>
-          </div>
-
+        <div class="container gallery__layout">
           <div class="gallery__grid">
             <div class="gallery__item gallery__item--wide" data-reveal>
               <img
@@ -378,6 +370,14 @@
                 loading="lazy"
               />
             </div>
+          </div>
+
+          <div class="gallery__aside" data-reveal>
+            <h2 class="display-2">Галерея</h2>
+            <p class="section-lede lede">
+              Территория, дома и мероприятия. Снимки на этой странице пока
+              заглушки, на запуске их заменят фотографии заказчика.
+            </p>
           </div>
         </div>
       </section>
@@ -602,6 +602,19 @@
       <a class="btn btn--primary" href="#booking">Забронировать</a>
       <a class="btn btn--ghost" href="tel:+79000000000">Позвонить</a>
     </div>
+
+    <button class="to-top" type="button" data-to-top aria-label="Наверх">
+      <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+        <path
+          d="M8 13V3M3.5 7.5 8 3l4.5 4.5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
 
     <!-- Яндекс.Метрика: вставить счётчик на запуске. -->
     <script src="assets/js/main.js"></script>

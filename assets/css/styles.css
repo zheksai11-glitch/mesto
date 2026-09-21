@@ -346,13 +346,14 @@ select {
 
 .site-nav ul {
   display: flex;
-  gap: clamp(1rem, 2.4vw, 2.25rem);
+  gap: clamp(0.9rem, 1.6vw, 1.6rem);
 }
 
 .site-nav a {
   font-size: var(--fs-small);
   letter-spacing: 0.01em;
   opacity: 0.9;
+  white-space: nowrap;
   padding-block: 0.35rem;
   border-bottom: 1px solid transparent;
   transition:
@@ -824,11 +825,22 @@ select {
 
 /* --- gallery -------------------------------------------------------------- */
 
+.gallery__layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: clamp(2.5rem, 6vw, 6rem);
+  align-items: start;
+}
+
+.gallery__aside {
+  position: sticky;
+  top: 6rem;
+}
+
 .gallery__grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: clamp(0.75rem, 1.5vw, 1.25rem);
-  margin-top: clamp(3rem, 5vw, 4.5rem);
 }
 
 .gallery__item {
@@ -1145,9 +1157,219 @@ select {
   }
 }
 
+/* --- liquid glass --------------------------------------------------------- */
+
+:root {
+  --glass-radius: 20px;
+  --glass-radius-sm: 12px;
+  --glass-pill: 999px;
+  --glass-tint: color-mix(in srgb, var(--forest-600) 58%, transparent);
+  --glass-tint-strong: color-mix(in srgb, var(--forest-700) 88%, transparent);
+  --glass-edge: color-mix(in srgb, var(--linen) 24%, transparent);
+  --glass-edge-bright: color-mix(in srgb, var(--linen) 44%, transparent);
+  --glass-blur: saturate(170%) blur(20px);
+  --glass-shadow:
+    inset 0 1px 0 var(--glass-edge-bright),
+    0 22px 50px -30px rgba(6, 10, 5, 0.85);
+}
+
+.site-header.is-scrolled {
+  background-color: color-mix(in srgb, var(--forest-900) 55%, transparent);
+  border-bottom-color: var(--glass-edge);
+  box-shadow:
+    inset 0 1px 0 var(--glass-edge-bright),
+    0 18px 40px -30px rgba(6, 10, 5, 0.9);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+}
+
+.nav-drawer {
+  background-color: color-mix(in srgb, var(--forest-950) 68%, transparent);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+}
+
+.hero__panel {
+  background-color: color-mix(in srgb, var(--forest-900) 70%, transparent);
+  border-top-color: var(--glass-edge);
+  box-shadow: inset 0 1px 0 var(--glass-edge-bright);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+}
+
+.mobile-cta {
+  background-color: color-mix(in srgb, var(--forest-900) 62%, transparent);
+  border-top-color: var(--glass-edge);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+}
+
+.to-top {
+  position: fixed;
+  right: var(--gutter);
+  bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  color: var(--linen);
+  background-color: var(--glass-tint);
+  border: 1px solid var(--glass-edge);
+  border-radius: var(--glass-pill);
+  box-shadow: var(--glass-shadow);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition:
+    opacity 240ms var(--ease-out),
+    transform 240ms var(--ease-out),
+    visibility 0s linear 240ms,
+    background-color 150ms ease,
+    border-color 150ms ease;
+}
+
+.to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition:
+    opacity 240ms var(--ease-out),
+    transform 240ms var(--ease-out),
+    visibility 0s,
+    background-color 150ms ease,
+    border-color 150ms ease;
+}
+
+.to-top svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.to-top:hover {
+  background-color: color-mix(in srgb, var(--linen) 12%, transparent);
+  border-color: var(--linen);
+}
+
+.reviews__inner,
+.form,
+.card,
+.service-row,
+.gallery__item,
+.location__item,
+.atmosphere__facts li {
+  background-color: var(--glass-tint);
+  border: 1px solid var(--glass-edge);
+  border-radius: var(--glass-radius);
+  box-shadow: var(--glass-shadow);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+}
+
+.reviews__inner {
+  padding: clamp(2rem, 4vw, 3rem);
+}
+
+.form {
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.card {
+  padding: clamp(0.7rem, 1.2vw, 1rem);
+}
+
+.card__media,
+.card--lead .card__media,
+.location__map,
+.atmosphere__band {
+  border-radius: calc(var(--glass-radius) - 6px);
+}
+
+.card__body {
+  padding: 1.25rem 0.9rem 0.5rem;
+}
+
+.services__rows {
+  display: grid;
+  gap: clamp(0.7rem, 1.3vw, 1rem);
+}
+
+.service-row {
+  padding: clamp(1.25rem, 2.4vw, 1.9rem);
+}
+
+.location__details {
+  gap: clamp(0.7rem, 1.3vw, 1rem);
+}
+
+.location__item {
+  padding: 1.25rem 1.4rem;
+}
+
+.atmosphere__facts {
+  gap: clamp(0.7rem, 1.3vw, 1rem);
+}
+
+.atmosphere__facts li,
+.atmosphere__facts li:first-child {
+  padding: 1.1rem 1.25rem;
+}
+
+.field input,
+.field select,
+.field textarea {
+  background-color: var(--glass-tint-strong);
+  border-color: var(--glass-edge);
+  border-radius: var(--glass-radius-sm);
+  box-shadow: inset 0 1px 0 var(--glass-edge-bright);
+}
+
+.btn {
+  border-radius: var(--glass-pill);
+}
+
+.btn--primary {
+  background-color: color-mix(in srgb, var(--brass-2) 92%, transparent);
+  border-color: color-mix(in srgb, var(--linen) 30%, transparent);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, #ffffff 45%, transparent),
+    0 16px 34px -22px rgba(6, 10, 5, 0.9);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+}
+
+.btn--ghost {
+  background-color: color-mix(in srgb, var(--linen) 8%, transparent);
+  border-color: var(--glass-edge);
+  box-shadow: inset 0 1px 0 var(--glass-edge-bright);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+}
+
+.service-row__tags li {
+  background-color: color-mix(in srgb, var(--linen) 10%, transparent);
+  border-color: var(--glass-edge);
+  border-radius: var(--glass-pill);
+  box-shadow: inset 0 1px 0 var(--glass-edge-bright);
+}
+
+@supports not (backdrop-filter: blur(1px)) {
+  .site-header.is-scrolled,
+  .hero__panel {
+    background-color: var(--forest-900);
+  }
+
+  .nav-drawer {
+    background-color: var(--forest-950);
+  }
+}
+
 /* --- responsive ----------------------------------------------------------- */
 
-@media (max-width: 1080px) {
+@media (max-width: 1200px) {
   .site-nav,
   .header-phone {
     display: none;
@@ -1164,7 +1386,9 @@ select {
   .burger {
     display: grid;
   }
+}
 
+@media (max-width: 1080px) {
   .services__grid,
   .atmosphere__body,
   .booking__grid {
@@ -1173,6 +1397,15 @@ select {
 
   .services__aside {
     position: static;
+  }
+
+  .gallery__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery__aside {
+    position: static;
+    order: -1;
   }
 
   .atmosphere__band {
@@ -1270,6 +1503,10 @@ select {
     display: flex;
   }
 
+  .to-top {
+    bottom: calc(5.25rem + env(safe-area-inset-bottom, 0px));
+  }
+
   .site-footer {
     padding-bottom: calc(2rem + 4.5rem);
   }
@@ -1325,5 +1562,48 @@ select {
   .nav-drawer {
     transition:
       visibility 0s linear 150ms !important;
+  }
+}
+
+/* --- glass fallbacks ------------------------------------------------------ */
+
+@media (prefers-reduced-transparency: reduce) {
+  .site-header.is-scrolled,
+  .nav-drawer,
+  .hero__panel,
+  .mobile-cta,
+  .to-top,
+  .reviews__inner,
+  .form,
+  .card,
+  .service-row,
+  .gallery__item,
+  .location__item,
+  .atmosphere__facts li,
+  .field input,
+  .field select,
+  .field textarea,
+  .btn--primary,
+  .btn--ghost,
+  .service-row__tags li {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background-color: var(--forest-900);
+  }
+}
+
+@media (prefers-contrast: more) {
+  .to-top,
+  .reviews__inner,
+  .form,
+  .card,
+  .service-row,
+  .gallery__item,
+  .location__item,
+  .atmosphere__facts li,
+  .field input,
+  .field select,
+  .field textarea {
+    border-color: var(--linen);
   }
 }

@@ -107,4 +107,20 @@
 
   var year = document.querySelector("[data-year]");
   if (year) year.textContent = String(new Date().getFullYear());
+
+  var topBtn = document.querySelector("[data-to-top]");
+
+  if (topBtn) {
+    var toggleTop = function () {
+      topBtn.classList.toggle("is-visible", window.scrollY > 480);
+    };
+
+    window.addEventListener("scroll", toggleTop, { passive: true });
+    toggleTop();
+
+    topBtn.addEventListener("click", function () {
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+    });
+  }
 })();
