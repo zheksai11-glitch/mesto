@@ -61,19 +61,49 @@
 
     <div class="scroll-sentinel" data-sentinel aria-hidden="true"></div>
 
-    <div class="nav-drawer" id="nav-drawer" data-drawer aria-hidden="true">
-      <nav aria-label="Мобильная навигация">
-        <a href="#accommodation">Размещение</a>
-        <a href="#services">Услуги</a>
-        <a href="#gallery">Галерея</a>
-        <a href="#about">О нас</a>
-        <a href="#reviews">Отзывы</a>
-        <a href="#location">Контакты</a>
-      </nav>
-      <div class="nav-drawer__contact">
-        <a href="tel:+79000000000">+7 900 000-00-00</a>
-        <a href="https://t.me/" rel="noopener">Telegram</a>
-        <a href="https://vk.com/" rel="noopener">ВКонтакте</a>
+    <div
+      class="nav-drawer"
+      id="nav-drawer"
+      data-drawer
+      role="dialog"
+      aria-modal="true"
+      aria-label="Меню"
+      aria-hidden="true"
+    >
+      <div class="nav-drawer__top">
+        <span class="nav-drawer__brand">Место для души</span>
+        <button
+          class="nav-drawer__close"
+          type="button"
+          data-drawer-close
+          aria-label="Закрыть меню"
+        >
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <path
+              d="M3 3l10 10M13 3L3 13"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="nav-drawer__inner">
+        <nav aria-label="Мобильная навигация">
+          <a href="#accommodation">Размещение</a>
+          <a href="#services">Услуги</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#about">О нас</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#location">Контакты</a>
+        </nav>
+        <div class="nav-drawer__contact">
+          <a href="tel:+79000000000">+7 900 000-00-00</a>
+          <a href="https://t.me/" rel="noopener">Telegram</a>
+          <a href="https://vk.com/" rel="noopener">ВКонтакте</a>
+        </div>
       </div>
     </div>
 

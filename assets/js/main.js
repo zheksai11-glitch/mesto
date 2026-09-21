@@ -5,6 +5,8 @@
   var sentinel = document.querySelector("[data-sentinel]");
   var drawer = document.querySelector("[data-drawer]");
   var burger = document.querySelector("[data-burger]");
+  var drawerClose = document.querySelector("[data-drawer-close]");
+  var lastFocused = null;
 
   if (header && sentinel && "IntersectionObserver" in window) {
     var headerObserver = new IntersectionObserver(function (entries) {
@@ -15,15 +17,31 @@
 
   function setDrawer(open) {
     if (!drawer || !burger) return;
+    if (open) lastFocused = document.activeElement;
+
     drawer.classList.toggle("is-open", open);
     drawer.setAttribute("aria-hidden", open ? "false" : "true");
     burger.setAttribute("aria-expanded", open ? "true" : "false");
+    burger.setAttribute("aria-label", open ? "Закрыть меню" : "Открыть меню");
     document.documentElement.style.overflow = open ? "hidden" : "";
+
+    if (open) {
+      var first = drawer.querySelector("a, button");
+      if (first) first.focus();
+    } else if (lastFocused && typeof lastFocused.focus === "function") {
+      lastFocused.focus();
+    }
   }
 
   if (burger) {
     burger.addEventListener("click", function () {
       setDrawer(!drawer.classList.contains("is-open"));
+    });
+  }
+
+  if (drawerClose) {
+    drawerClose.addEventListener("click", function () {
+      setDrawer(false);
     });
   }
 
@@ -36,7 +54,28 @@
   }
 
   document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") setDrawer(false);
+    var isOpen = drawer && drawer.classList.contains("is-open");
+
+    if (event.key === "Escape" && isOpen) {
+      setDrawer(false);
+      return;
+    }
+
+    if (event.key !== "Tab" || !isOpen) return;
+
+    var focusables = drawer.querySelectorAll("a[href], button:not([disabled])");
+    if (!focusables.length) return;
+
+    var first = focusables[0];
+    var last = focusables[focusables.length - 1];
+
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
   });
 
   var revealables = document.querySelectorAll("[data-reveal]");
