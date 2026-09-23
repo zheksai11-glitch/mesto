@@ -2454,6 +2454,22 @@ select {
     grid-template-columns: 1fr;
   }
 
+  .hero {
+    padding-top: 4.5rem;
+  }
+
+  .hero__panel {
+    margin-bottom: calc(0.75rem + 5rem);
+  }
+
+  .hero__title {
+    font-size: clamp(2.1rem, 8vw, 3rem);
+  }
+
+  .hero__actions .btn {
+    flex: 1 1 calc(50% - 0.45rem);
+  }
+
   .hero__usp {
     flex-direction: column;
     gap: 0.5rem;
