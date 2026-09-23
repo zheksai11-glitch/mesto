@@ -3,25 +3,125 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>«Место для души»: загородный эко-отдых в Адыгее под Краснодаром</title>
+
+    <!-- SEO: заменить домен на реальный при запуске -->
+    <title>База отдыха в Адыгее у воды — коттеджи и бронирование | «Место для души»</title>
     <meta
       name="description"
-      content="Уединённый эко-отдых «Место для души»: коттеджи и беседки в Адыгее, свадьбы, корпоративы, spa и природа. Бронирование по заявке, 40 минут от Краснодара."
+      content="Эко-отдых в Адыгее в 40 мин от Краснодара: коттеджи и беседки у воды, бассейн, spa, свадьбы. Заявка онлайн, ответ за 15 минут, отмена за 14 дней бесплатно."
     />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://mesto-dlya-dushi.ru/" />
+    <meta name="theme-color" content="#173c3e" />
+
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="«Место для души»: эко-отдых в Адыгее" />
+    <meta property="og:site_name" content="База отдыха «Место для души»" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta
+      property="og:title"
+      content="База отдыха в Адыгее у воды — коттеджи и бронирование | «Место для души»"
+    />
     <meta
       property="og:description"
-      content="Коттеджи и беседки на своей территории, мероприятия и spa. Уединение и сервис под Краснодаром."
+      content="Коттеджи и беседки на своей территории у воды: бассейн, spa, свадьбы и корпоративы. 40 минут от Краснодара. Бронирование по заявке, ответ за 15 минут."
     />
-    <meta property="og:locale" content="ru_RU" />
+    <meta
+      property="og:image"
+      content="https://mesto-dlya-dushi.ru/assets/img/mesto-sunset-lagoon-hero.png"
+    />
+    <meta property="og:url" content="https://mesto-dlya-dushi.ru/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Prata&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" as="image" href="assets/img/mesto-sunset-lagoon-hero.png" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Schema.org: карточка организации для поисковых систем.
+         Телефон, домен и sameAs — плейсхолдеры, заменить на реальные. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "База отдыха «Место для души»",
+        "alternateName": "Место для души, эко-отдых в Адыгее",
+        "description": "Загородная база отдыха у воды в Тахтамукайском районе Адыгеи: коттеджи и беседки, бассейн, spa, организация свадеб и корпоративов.",
+        "url": "https://mesto-dlya-dushi.ru/",
+        "telephone": "+7-900-000-00-00",
+        "email": "info@mesto-dlya-dushi.ru",
+        "priceRange": "₽₽",
+        "currenciesAccepted": "RUB",
+        "image": "https://mesto-dlya-dushi.ru/assets/img/mesto-sunset-lagoon-hero.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Шапсугская Дамба, 16",
+          "addressLocality": "аул Афипсип",
+          "addressRegion": "Республика Адыгея",
+          "postalCode": "385112",
+          "addressCountry": "RU"
+        },
+        "sameAs": ["https://t.me/", "https://vk.com/"],
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Бассейн", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Зоны барбекю", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Spa", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Конференц-залы", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Парковка", "value": true }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Сколько ехать от Краснодара до базы отдыха?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Около 40 минут на машине до аула Афипсип, Тахтамукайский район, Республика Адыгея. Точный маршрут присылаем после подтверждения бронирования."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Как забронировать коттедж?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Оставьте заявку на сайте или позвоните. Менеджер подтверждает свободные даты в течение 15 минут в рабочее время, затем вносится предоплата 20%."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Можно ли отменить бронирование?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да. При отмене не позднее чем за 14 дней до заезда предоплата возвращается полностью."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Принимают ли гостей с детьми и животными?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да, база рассчитана на семейный отдых: есть детская территория и неглубокая зона бассейна. Проживание с животными обсуждается при бронировании."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Можно ли провести свадьбу или корпоратив?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да: площадка на улице, ресторан и конференц-залы. Программу и меню собираем под ваш сценарий и бюджет, бронировать дату мероприятия рекомендуем за 1-2 месяца."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Перейти к содержимому</a>
@@ -32,10 +132,10 @@
 
         <nav class="site-nav" aria-label="Основная навигация">
           <ul>
-            <li><a href="#accommodation">Размещение</a></li>
+            <li><a href="#accommodation">Коттеджи и цены</a></li>
+            <li><a href="#promo">Акции</a></li>
             <li><a href="#services">Услуги</a></li>
             <li><a href="#gallery">Галерея</a></li>
-            <li><a href="#about">О нас</a></li>
             <li><a href="#reviews">Отзывы</a></li>
             <li><a href="#location">Контакты</a></li>
           </ul>
@@ -43,7 +143,6 @@
 
         <div class="header-actions">
           <a class="header-phone" href="tel:+79000000000">+7 900 000-00-00</a>
-          <a class="header-phone" href="https://t.me/" rel="noopener">Telegram</a>
           <a class="btn btn--primary btn--sm" href="#booking">Забронировать</a>
           <button
             class="burger"
@@ -92,10 +191,10 @@
 
       <div class="nav-drawer__inner">
         <nav aria-label="Мобильная навигация">
-          <a href="#accommodation">Размещение</a>
+          <a href="#accommodation">Коттеджи и цены</a>
+          <a href="#promo">Акции</a>
           <a href="#services">Услуги</a>
           <a href="#gallery">Галерея</a>
-          <a href="#about">О нас</a>
           <a href="#reviews">Отзывы</a>
           <a href="#location">Контакты</a>
         </nav>
@@ -104,50 +203,80 @@
           <a href="https://t.me/" rel="noopener">Telegram</a>
           <a href="https://vk.com/" rel="noopener">ВКонтакте</a>
         </div>
+        <a class="btn btn--primary nav-drawer__cta" href="#booking">Забронировать отдых</a>
       </div>
     </div>
 
     <main id="main">
-      <!-- HERO -->
-      <section class="hero" id="top" aria-label="Место для души">
+      <!-- HERO: оффер и главное действие -->
+      <section class="hero" id="top" aria-label="База отдыха Место для души">
         <img
           class="hero__plate"
-          src="assets/img/placeholder-hero.svg"
-          alt="Пустой слот фонового фото территории базы отдыха, заменяется на реальную фотографию"
-          width="1920"
-          height="1200"
+          src="assets/img/mesto-sunset-lagoon-hero.png"
+          alt="Закат над водой и коттеджем базы отдыха «Место для души» в Адыгее"
+          width="1536"
+          height="1024"
           fetchpriority="high"
         />
         <div class="hero__veil" aria-hidden="true"></div>
 
         <div class="hero__panel">
           <div class="container">
-            <h1 class="display-1 hero__title">Место для души</h1>
+            <p class="hero__eyebrow">Адыгея · у воды · 40 минут от Краснодара</p>
+            <h1 class="display-1 hero__title">База отдыха «Место для души» — коттеджи у воды в Адыгее</h1>
 
             <div class="hero__row">
               <p class="lede">
-                Загородный эко-отдых в Адыгее: тишина как роскошь и сервис
-                рядом.
+                Тишина, своя береговая линия и сервис, который берёт быт на
+                себя: заезд, питание, мероприятия. Оставьте заявку — подберём
+                дом под вашу компанию на эти выходные.
               </p>
               <div class="hero__actions">
-                <a class="btn btn--primary" href="#accommodation"
-                  >Смотреть размещение</a
-                >
-                <a class="btn btn--ghost" href="#booking">Забронировать</a>
+                <a class="btn btn--primary" href="#booking">Забронировать отдых</a>
+                <a class="btn btn--ghost" href="#accommodation">Смотреть коттеджи и цены</a>
               </div>
             </div>
+
+            <ul class="hero__usp">
+              <li>Ответим за 15 минут</li>
+              <li>Предоплата 20%</li>
+              <li>Отмена за 14 дней — бесплатно</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <!-- ACCOMMODATION -->
+      <!-- TRUST: быстрые факты, снимающие первые сомнения -->
+      <section class="trust-strip" aria-label="Почему нас выбирают">
+        <div class="container trust-strip__inner">
+          <div class="trust-strip__item">
+            <b>Своя территория у воды</b>
+            <span>Берег, лес и бассейн — без выездных маршруток</span>
+          </div>
+          <div class="trust-strip__item">
+            <b>Камерный формат</b>
+            <span>Немного гостей: тихо, свободно, без очередей</span>
+          </div>
+          <div class="trust-strip__item">
+            <b>Отдых под ключ</b>
+            <span>Проживание, питание, spa и праздник в одном месте</span>
+          </div>
+          <div class="trust-strip__item">
+            <b>Честные условия</b>
+            <span>Фиксированная цена, возврат предоплаты за 14 дней</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- РАЗМЕЩЕНИЕ С ЦЕНАМИ: главный товар -->
       <section class="section" id="accommodation">
         <div class="container">
           <div class="section-head" data-reveal>
-            <h2 class="display-2">Размещение</h2>
+            <h2 class="display-2">Коттеджи и беседки: цены за сутки</h2>
             <p class="section-lede lede">
-              Коттеджи и беседки на своей территории: от дома у кромки леса до
-              беседки для большой компании.
+              Три варианта размещения на выбор — от дома у кромки леса для
+              семьи до крытой беседки под компанию до 12 человек. Бронируем
+              дату после подтверждения менеджером.
             </p>
           </div>
 
@@ -156,21 +285,22 @@
               <div class="card__media">
                 <img
                   src="assets/img/placeholder-landscape.svg"
-                  alt="Пустой слот фото коттеджа «#1, заменить"
+                  alt="Коттедж для отдыха до 6 гостей у леса в Адыгее — фото заменят реальные"
                   width="1600"
                   height="1000"
                   loading="lazy"
                 />
               </div>
               <div class="card__body">
-                <h3 class="card__name">Коттедж «#1»</h3>
-                <p class="card__meta">До 6 гостей, 3 спальни, терраса с мангалом</p>
+                <h3 class="card__name">Коттедж «#1» — для семьи или компании</h3>
+                <p class="card__meta">До 6 гостей · 3 спальни · терраса с мангалом</p>
                 <p class="card__desc">
-                  Отдельный дом у кромки леса. Панорамные окна выходят на
-                  деревья, у террасы есть своя зона отдыха. Подходит паре, семье
-                  и небольшой компании.
+                  Отдельный дом у кромки леса: панорамные окна, своя зона
+                  отдыха у террасы. Полный цикл быта берём на себя — заезд,
+                  постель, посуда, мангальная зона.
                 </p>
-                <a class="link-arrow" href="#booking">Забронировать</a>
+                <p class="card__price">от 12 000 ₽ <small>/ сутки</small></p>
+                <a class="link-arrow" href="#booking" data-prefill="Коттедж «#1»">Забронировать коттедж</a>
               </div>
             </article>
 
@@ -178,20 +308,21 @@
               <div class="card__media">
                 <img
                   src="assets/img/placeholder-portrait.svg"
-                  alt="Пустой слот фото коттеджа «#2», заменить"
+                  alt="Компактный коттедж у воды для пары — фото заменят реальные"
                   width="1000"
                   height="1333"
                   loading="lazy"
                 />
               </div>
               <div class="card__body">
-                <h3 class="card__name">Коттедж «#2»</h3>
-                <p class="card__meta">До 4 гостей, 2 спальни, выход к воде</p>
+                <h3 class="card__name">Коттедж «#2» — вид на воду</h3>
+                <p class="card__meta">До 4 гостей · 2 спальни · летняя веранда</p>
                 <p class="card__desc">
-                  Компактный дом для пары или семьи: спальни с видом на воду,
-                  большая кухня-гостиная и летняя веранда.
+                  Дом для пары или семьи: спальни с видом на воду,
+                  кухня-гостиная и веранда для утреннего кофе.
                 </p>
-                <a class="link-arrow" href="#booking">Забронировать</a>
+                <p class="card__price">от 9 000 ₽ <small>/ сутки</small></p>
+                <a class="link-arrow" href="#booking" data-prefill="Коттедж «#2»">Забронировать коттедж</a>
               </div>
             </article>
 
@@ -199,87 +330,62 @@
               <div class="card__media">
                 <img
                   src="assets/img/placeholder-portrait.svg"
-                  alt="Пустой слот фото беседки «#3», заменить"
+                  alt="Крытая беседка с мангалом для компании до 12 человек — фото заменят реальные"
                   width="1000"
                   height="1333"
                   loading="lazy"
                 />
               </div>
               <div class="card__body">
-                <h3 class="card__name">Беседка «#3»</h3>
-                <p class="card__meta">До 12 гостей, мангал, зона барбекю</p>
+                <h3 class="card__name">Беседка «#3» — под компанию</h3>
+                <p class="card__meta">До 12 гостей · мангал · зона барбекю</p>
                 <p class="card__desc">
                   Крытая беседка под старыми деревьями: длинный стол, мангал и
-                  место для вечерних посиделок большой компанией.
+                  место для вечерних посиделок. Можно заказать только на день.
                 </p>
-                <a class="link-arrow" href="#booking">Забронировать</a>
+                <p class="card__price">от 4 000 ₽ <small>/ день</small></p>
+                <a class="link-arrow" href="#booking" data-prefill="Беседка «#3»">Забронировать беседку</a>
               </div>
             </article>
           </div>
 
           <p class="section-note" data-reveal>
-            Названия, вместимость и фотографии в этом блоке примерные: их
-            заменят на реальные данные заказчика.
+            Цены на этом макете примерные: их заменит заказчик. Точную стоимость
+            на ваши даты менеджер подтверждает в переписке или по телефону.
           </p>
         </div>
       </section>
 
-      <!-- ABOUT / ATMOSPHERE -->
-      <section class="section section--deep" id="about">
+      <!-- АКЦИЯ: дедлайн и выгода -->
+      <section class="section section--tight" id="promo">
         <div class="container">
-          <figure class="atmosphere__band" data-reveal>
-            <img
-              src="assets/img/placeholder-landscape.svg"
-              alt="Пустой слот фото территории базы отдыха, заменить"
-              width="1600"
-              height="1000"
-              loading="lazy"
-            />
-            <figcaption class="atmosphere__title">
-              <h2 class="display-2">Уединение, в котором есть всё</h2>
-            </figcaption>
-          </figure>
-
-          <div class="atmosphere__body">
-            <div class="prose" data-reveal>
+          <div class="promo" data-reveal>
+            <div class="promo__text">
+              <p class="promo__eyebrow">Акция до 30 сентября</p>
+              <h2 class="display-2">Минус 15% при бронировании от 3 ночей</h2>
               <p>
-                Небольшая территория в Адыгее: дома стоят так, чтобы соседей не
-                было слышно, а лес оставался лесом. Коттеджи, беседки, бассейн и
-                spa собраны в одном месте, чтобы не приходилось никуда ехать.
-              </p>
-              <p>
-                Мы не делаем массовый курорт. Гостей одновременно немного,
-                поэтому персонал успевает помочь, а вечером слышно только цикад.
+                Осень на воде тихая: тёплый бассейн работает до конца сезона.
+                Забронируйте три ночи и больше — скидка считается сразу, без
+                промокодов и «мелкого шрифта».
               </p>
             </div>
-
-            <ul class="atmosphere__facts" data-reveal style="--d: 0.08s">
-              <li>
-                <b>Своя территория</b>
-                <span>Отдельный участок в Адыгее, в стороне от застроек</span>
-              </li>
-              <li>
-                <b>Сервис рядом</b>
-                <span>Заезд, питание и мероприятия берём на себя</span>
-              </li>
-              <li>
-                <b>Немного гостей</b>
-                <span>Камерная загрузка: тишина по умолчанию</span>
-              </li>
-            </ul>
+            <a class="btn btn--primary promo__cta" href="#booking">Получить скидку</a>
           </div>
         </div>
       </section>
 
-      <!-- SERVICES -->
+      <!-- УСЛУГИ -->
       <section class="section" id="services">
         <div class="container services__grid">
           <div class="services__aside" data-reveal>
-            <h2 class="display-2">Услуги</h2>
+            <h2 class="display-2">Услуги базы отдыха</h2>
             <p class="section-lede lede">
-              Всё для отдыха на территории. Мероприятия собираем под ваш
-              сценарий, от тихого ужина до свадьбы.
+              Всё для отдыха — на территории. Мероприятия собираем под ваш
+              сценарий: от тихого ужина у воды до свадьбы на 30 гостей.
             </p>
+            <a class="btn btn--primary btn--sm services__cta" href="#booking"
+              >Обсудить мероприятие</a
+            >
           </div>
 
           <ul class="services__rows">
@@ -304,7 +410,7 @@
               <div class="service-row__body">
                 <p class="service-row__desc">
                   Ресторан и зоны барбекю: завтраки на террасе, ужины у огня и
-                  банкеты под конкретное меню.
+                  банкеты под конкретное меню. Привезти свои продукты — можно.
                 </p>
                 <ul class="service-row__tags">
                   <li>Ресторан</li>
@@ -333,8 +439,8 @@
               <h3 class="display-3 service-row__name">Мероприятия</h3>
               <div class="service-row__body">
                 <p class="service-row__desc">
-                  Свадьбы, корпоративы и конференции: конференц-залы, площадки на
-                  улице и spa. Собираем программу под задачу и бюджет.
+                  Свадьбы, корпоративы и конференции: конференц-залы, площадки
+                  на улице и spa. Собираем программу под задачу и бюджет.
                 </p>
                 <ul class="service-row__tags">
                   <li>Свадьбы</li>
@@ -348,14 +454,109 @@
         </div>
       </section>
 
-      <!-- GALLERY -->
+      <!-- ШАГИ: как забронировать -->
+      <section class="section section--deep" id="steps">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <h2 class="display-2">Как забронировать — 4 шага</h2>
+            <p class="section-lede lede">
+              От заявки до заезда проходит меньше недели, а даты держим за
+              вами в переписке.
+            </p>
+          </div>
+
+          <ol class="steps">
+            <li class="step" data-reveal>
+              <span class="step__num" aria-hidden="true">1</span>
+              <h3 class="step__title">Оставляете заявку</h3>
+              <p class="step__desc">
+                Форма на сайте, звонок или сообщение в Telegram — как удобнее.
+              </p>
+            </li>
+            <li class="step" data-reveal style="--d: 0.06s">
+              <span class="step__num" aria-hidden="true">2</span>
+              <h3 class="step__title">Подтверждаем даты</h3>
+              <p class="step__desc">
+                Менеджер отвечает за 15 минут в рабочее время и держит дату за
+                вами двое суток.
+              </p>
+            </li>
+            <li class="step" data-reveal style="--d: 0.12s">
+              <span class="step__num" aria-hidden="true">3</span>
+              <h3 class="step__title">Предоплата 20%</h3>
+              <p class="step__desc">
+                Остаток — в день заезда. Не получается приехать? Возвращаем
+                предоплату при отмене за 14 дней.
+              </p>
+            </li>
+            <li class="step" data-reveal style="--d: 0.18s">
+              <span class="step__num" aria-hidden="true">4</span>
+              <h3 class="step__title">Заезд и отдых</h3>
+              <p class="step__desc">
+                Заезд с 14:00. Маршрут, схему территории и контакты
+                администратора присылаем накануне.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- О НАС + АТМОСФЕРА -->
+      <section class="section section--deep" id="about">
+        <div class="container">
+          <figure class="atmosphere__band" data-reveal>
+            <img
+              src="assets/img/placeholder-landscape.svg"
+              alt="Территория базы отдыха у воды — фото заменят реальные"
+              width="1600"
+              height="1000"
+              loading="lazy"
+            />
+            <figcaption class="atmosphere__title">
+              <h2 class="display-2">О базе отдыха «Место для души»</h2>
+            </figcaption>
+          </figure>
+
+          <div class="atmosphere__body">
+            <div class="prose" data-reveal>
+              <p>
+                Небольшая территория в Адыгее: дома стоят так, чтобы соседей не
+                было слышно, а лес оставался лесом. Коттеджи, беседки, бассейн
+                и spa собраны в одном месте, чтобы не приходилось никуда ехать.
+              </p>
+              <p>
+                Мы не делаем массовый курорт. Гостей одновременно немного,
+                поэтому персонал успевает помочь, а вечером слышно только
+                цикад.
+              </p>
+            </div>
+
+            <ul class="atmosphere__facts" data-reveal style="--d: 0.08s">
+              <li>
+                <b>Своя территория</b>
+                <span>Отдельный участок в Адыгее, в стороне от застроек</span>
+              </li>
+              <li>
+                <b>Сервис рядом</b>
+                <span>Заезд, питание и мероприятия берём на себя</span>
+              </li>
+              <li>
+                <b>Немного гостей</b>
+                <span>Камерная загрузка: тишина по умолчанию</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ГАЛЕРЕЯ -->
       <section class="section section--deep" id="gallery">
         <div class="container gallery__layout">
           <div class="gallery__grid">
             <div class="gallery__item gallery__item--wide" data-reveal>
               <img
                 src="assets/img/placeholder-landscape.svg"
-                alt="Пустой слот фото: вид на территорию, заменить"
+                alt="Вид на воду и территорию базы отдыха — фото заменят реальные"
                 width="1600"
                 height="1000"
                 loading="lazy"
@@ -368,7 +569,7 @@
             >
               <img
                 src="assets/img/placeholder-portrait.svg"
-                alt="Пустой слот фото: коттедж снаружи, заменить"
+                alt="Коттедж снаружи — фото заменят реальные"
                 width="1000"
                 height="1333"
                 loading="lazy"
@@ -381,7 +582,7 @@
             >
               <img
                 src="assets/img/placeholder-square.svg"
-                alt="Пустой слот фото: интерьер дома, заменить"
+                alt="Интерьер коттеджа — фото заменят реальные"
                 width="1000"
                 height="1000"
                 loading="lazy"
@@ -394,7 +595,7 @@
             >
               <img
                 src="assets/img/placeholder-square.svg"
-                alt="Пустой слот фото: зона барбекю, заменить"
+                alt="Зона барбекю на территории — фото заменят реальные"
                 width="1000"
                 height="1000"
                 loading="lazy"
@@ -408,83 +609,89 @@
               Территория, дома и мероприятия. Снимки на этой странице пока
               заглушки, на запуске их заменят фотографии заказчика.
             </p>
+            <a class="link-arrow" href="#booking">Хочу так же — забронировать</a>
           </div>
         </div>
       </section>
 
-      <!-- LOCATION -->
-      <section class="section" id="location">
-        <div class="container">
-          <h2 class="display-2" data-reveal>Как добраться</h2>
-          <p class="location__lede lede" data-reveal>
-            База находится в Тахтамукайском районе Адыгеи. От Краснодара около
-            сорока минут на машине; маршрут подскажем после бронирования.
-          </p>
-
-          <div class="location__details" data-reveal style="--d: 0.08s">
-            <div class="location__item">
-              <span class="label">Адрес</span>
-              <span
-                >Краснодар, ул. Шапсугская Дамба, 16, аул Афипсип,
-                Тахтамукайский район, Республика Адыгея, 385112</span
-              >
-            </div>
-            <div class="location__item">
-              <span class="label">Телефон</span>
-              <a href="tel:+79000000000">+7 900 000-00-00</a>
-            </div>
-            <div class="location__item">
-              <span class="label">Почта</span>
-              <a href="mailto:info@mesto-dlya-dushi.ru"
-                >info@mesto-dlya-dushi.ru</a
-              >
-            </div>
-            <div class="location__item">
-              <span class="label">Мы в сети</span>
-              <span>
-                <a href="https://t.me/" rel="noopener">Telegram</a>,
-                <a href="https://vk.com/" rel="noopener">ВКонтакте</a>
-              </span>
-            </div>
-          </div>
-
-          <div class="location__map" data-reveal style="--d: 0.08s">
-            <img
-              src="assets/img/placeholder-map.svg"
-              alt="Пустой слот для карты проезда Яндекс с адресом базы"
-              width="1200"
-              height="900"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- REVIEWS -->
+      <!-- ОТЗЫВЫ: соцдоказательство -->
       <section class="section section--raise reviews" id="reviews">
         <div class="container reviews__inner">
           <h2 class="display-2" data-reveal>Отзывы гостей</h2>
-          <p class="section-lede lede" data-reveal style="--d: 0.08s">
-            Пока здесь пусто: реальных отзывов ещё нет. Они появятся после первых
-            гостей, мы публикуем только проверенные.
+          <div class="reviews__slider" data-reviews-slider>
+            <div class="reviews__track">
+              <figure class="review-card review-slide is-active">
+                <blockquote>
+                  <p>
+                    «Приехали на два дня с детьми, уезжать не хотели. Бассейн
+                    тёплый, в беседке мангал уже готов, а вечером нас собрали у
+                    костра. Тишина, которую мы искали».
+                  </p>
+                </blockquote>
+                <figcaption>
+                  <b>Марина</b>
+                  <span>отдых с семьёй, 4 гостя</span>
+                </figcaption>
+              </figure>
+              <figure class="review-card review-slide">
+                <blockquote>
+                  <p>
+                    «Корпоратив на 25 человек: конференц-зал утром, барбекю
+                    вечером. Помогали с меню и рассадкой, счёт получился
+                    предсказуемым — без сюрпризов».
+                  </p>
+                </blockquote>
+                <figcaption>
+                  <b>Дмитрий</b>
+                  <span>корпоратив, 25 гостей</span>
+                </figcaption>
+              </figure>
+              <figure class="review-card review-slide">
+                <blockquote>
+                  <p>
+                    «Свадьбу сыграли на террасе у воды. Отдельное спасибо за
+                    то, что гостей расселили по домам без давки, и на
+                    следующий день был спокойный завтрак у воды».
+                  </p>
+                </blockquote>
+                <figcaption>
+                  <b>Анна и Сергей</b>
+                  <span>выездная свадьба</span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="reviews__dots" aria-label="Выбор отзыва">
+              <button class="reviews__dot is-active" type="button" aria-current="true" aria-label="Показать отзыв 1"></button>
+              <button class="reviews__dot" type="button" aria-current="false" aria-label="Показать отзыв 2"></button>
+              <button class="reviews__dot" type="button" aria-current="false" aria-label="Показать отзыв 3"></button>
+            </div>
+          </div>
+          <p class="reviews__disclaimer" data-reveal>
+            На этом макете отзывы приведены как пример оформления и будут
+            заменены на реальные отзывы гостей.
           </p>
-          <div class="reviews__actions" data-reveal style="--d: 0.16s">
-            <a class="btn btn--ghost" href="mailto:info@mesto-dlya-dushi.ru"
-              >Оставить отзыв</a
-            >
+          <div class="reviews__actions" data-reveal style="--d: 0.1s">
+            <a class="btn btn--primary" href="#booking">Хочу так же отдохнуть</a>
           </div>
         </div>
       </section>
 
-      <!-- BOOKING -->
+      <!-- ФОРМА ЗАЯВКИ: главное действие -->
       <section class="section section--deep" id="booking">
         <div class="container booking__grid">
           <div data-reveal>
-            <h2 class="display-2">Оставьте заявку</h2>
+            <h2 class="display-2">Забронируйте отдых за 2 минуты</h2>
             <p class="section-lede lede">
-              Свободные даты подтверждает менеджер. Оставьте контакты, свяжемся и
-              подберём дом под вашу компанию.
+              Оставьте заявку — менеджер проверит свободные даты и пришлёт
+              подборку домов с итоговой ценой. Ни к чему не обязывает.
             </p>
+
+            <ul class="guarantees">
+              <li>Ответ за 15 минут в рабочее время</li>
+              <li>Держим дату 48 часов после подтверждения</li>
+              <li>Предоплата 20%, возврат при отмене за 14 дней</li>
+            </ul>
 
             <div class="booking__contacts">
               <a href="tel:+79000000000">+7 900 000-00-00</a>
@@ -528,6 +735,16 @@
 
             <div class="form__row form__row--2">
               <div class="field">
+                <label for="housing">Что хотите забронировать</label>
+                <select id="housing" name="housing" data-prefill-target>
+                  <option value="">Ещё не решили</option>
+                  <option>Коттедж «#1» — до 6 гостей</option>
+                  <option>Коттедж «#2» — до 4 гостей</option>
+                  <option>Беседка «#3» — до 12 гостей</option>
+                  <option>Мероприятие (свадьба, корпоратив)</option>
+                </select>
+              </div>
+              <div class="field">
                 <label for="dates">Даты</label>
                 <input
                   id="dates"
@@ -536,6 +753,9 @@
                   placeholder="Например: 12-15 июня"
                 />
               </div>
+            </div>
+
+            <div class="form__row form__row--2">
               <div class="field">
                 <label for="guests">Гостей</label>
                 <select id="guests" name="guests">
@@ -547,15 +767,29 @@
                   <option>Больше 30</option>
                 </select>
               </div>
+              <div class="field">
+                <label for="message">Комментарий</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Повод поездки, пожелания по дому, нужны ли услуги"
+                ></textarea>
+              </div>
             </div>
 
-            <div class="field">
-              <label for="message">Комментарий</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Повод поездки, пожелания по дому, нужны ли услуги"
-              ></textarea>
+            <div class="field field--check">
+              <input
+                id="consent"
+                name="consent"
+                type="checkbox"
+                required
+                data-error="Нужно согласие на обработку данных"
+              />
+              <label for="consent">
+                Согласен на обработку персональных данных и получение ответа по
+                указанным контактам
+              </label>
+              <span class="field__error" aria-live="polite"></span>
             </div>
 
             <button class="btn btn--primary form__submit" type="submit">
@@ -565,9 +799,113 @@
               Ответим в течение дня.
             </p>
             <p class="form__fineprint">
-              Нажимая кнопку, вы соглашаетесь на обработку персональных данных.
+              Заявка ни к чему не обязывает: менеджер подтвердит даты и цену,
+              а решение примете после разговора.
             </p>
           </form>
+        </div>
+      </section>
+
+      <!-- FAQ: снятие возражений + ответ на поисковые вопросы -->
+      <section class="section" id="faq">
+        <div class="container faq__layout">
+          <div class="faq__aside" data-reveal>
+            <h2 class="display-2">Частые вопросы</h2>
+            <p class="section-lede lede">
+              Не нашли ответ? Напишите в Telegram или позвоните — отвечаем в
+              течение дня.
+            </p>
+          </div>
+
+          <div class="faq" data-reveal style="--d: 0.08s">
+            <details class="faq__item" name="faq" open>
+              <summary>Сколько ехать от Краснодара до базы отдыха?</summary>
+              <p>
+                Около 40 минут на машине до аула Афипсип, Тахтамукайский
+                район, Республика Адыгея. Точный маршрут присылаем после
+                подтверждения бронирования.
+              </p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Как забронировать коттедж?</summary>
+              <p>
+                Оставьте заявку на сайте или позвоните. Менеджер подтверждает
+                свободные даты в течение 15 минут в рабочее время, затем
+                вносится предоплата 20%.
+              </p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Можно ли отменить бронирование?</summary>
+              <p>
+                Да. При отмене не позднее чем за 14 дней до заезда предоплата
+                возвращается полностью.
+              </p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Принимают ли гостей с детьми и животными?</summary>
+              <p>
+                Да, база рассчитана на семейный отдых: есть детская территория
+                и неглубокая зона бассейна. Проживание с животными обсуждается
+                при бронировании.
+              </p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Можно ли провести свадьбу или корпоратив?</summary>
+              <p>
+                Да: площадка на улице, ресторан и конференц-залы. Программу и
+                меню собираем под ваш сценарий и бюджет, бронировать дату
+                мероприятия рекомендуем за 1–2 месяца.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- КАК ДОБРАТЬСЯ -->
+      <section class="section" id="location">
+        <div class="container">
+          <h2 class="display-2" data-reveal>Как добраться</h2>
+          <p class="location__lede lede" data-reveal>
+            База находится в Тахтамукайском районе Адыгеи. От Краснодара около
+            сорока минут на машине; маршрут подскажем после бронирования.
+          </p>
+
+          <div class="location__details" data-reveal style="--d: 0.08s">
+            <div class="location__item">
+              <span class="label">Адрес</span>
+              <span
+                >Краснодар, ул. Шапсугская Дамба, 16, аул Афипсип,
+                Тахтамукайский район, Республика Адыгея, 385112</span
+              >
+            </div>
+            <div class="location__item">
+              <span class="label">Телефон</span>
+              <a href="tel:+79000000000">+7 900 000-00-00</a>
+            </div>
+            <div class="location__item">
+              <span class="label">Почта</span>
+              <a href="mailto:info@mesto-dlya-dushi.ru"
+                >info@mesto-dlya-dushi.ru</a
+              >
+            </div>
+            <div class="location__item">
+              <span class="label">Мы в сети</span>
+              <span>
+                <a href="https://t.me/" rel="noopener">Telegram</a>,
+                <a href="https://vk.com/" rel="noopener">ВКонтакте</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="location__map" data-reveal style="--d: 0.08s">
+            <img
+              src="assets/img/placeholder-map.svg"
+              alt="Схема проезда к базе отдыха в ауле Афипсип — здесь будет Яндекс.Карта"
+              width="1200"
+              height="900"
+              loading="lazy"
+            />
+          </div>
         </div>
       </section>
     </main>
@@ -578,18 +916,18 @@
           <div class="footer__brand">
             <a class="brand" href="#top">Место для души</a>
             <p>
-              Загородный эко-отдых в Адыгее: коттеджи, беседки, свадьбы,
-              корпоративы и spa.
+              База отдыха у воды в Адыгее: коттеджи, беседки, бассейн, spa,
+              свадьбы и корпоративы. В 40 минутах от Краснодара.
             </p>
           </div>
 
           <div class="footer__col">
             <h3>Отдых</h3>
             <ul>
-              <li><a href="#accommodation">Размещение</a></li>
+              <li><a href="#accommodation">Коттеджи и цены</a></li>
               <li><a href="#services">Услуги</a></li>
               <li><a href="#gallery">Галерея</a></li>
-              <li><a href="#reviews">Отзывы</a></li>
+              <li><a href="#promo">Акции</a></li>
             </ul>
           </div>
 
@@ -597,9 +935,9 @@
             <h3>База</h3>
             <ul>
               <li><a href="#about">О нас</a></li>
-              <li><a href="#booking">Бронирование</a></li>
-              <li><a href="#location">Контакты</a></li>
-              <li><a href="#booking">Новости и акции</a></li>
+              <li><a href="#steps">Как забронировать</a></li>
+              <li><a href="#faq">Частые вопросы</a></li>
+              <li><a href="#reviews">Отзывы</a></li>
             </ul>
           </div>
 
@@ -621,8 +959,8 @@
         <div class="footer__bottom">
           <span>© <span data-year>2026</span> «Место для души»</span>
           <span
-            >Демонстрационный макет: контакты, кроме адреса, и контент
-            заполняются заказчиком.</span
+            >Демонстрационный макет: контакты, кроме адреса, цены, акции и
+            контент заполняются заказчиком.</span
           >
         </div>
       </div>

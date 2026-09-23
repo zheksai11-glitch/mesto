@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Пустой слот для карты проезда Яндекс">
-  <rect width="1200" height="900" fill="#2a3a26"/>
-  <rect x="36" y="36" width="1128" height="828" fill="none" stroke="#4a5c40" stroke-width="2" stroke-dasharray="14 10"/>
-  <g stroke="#3d5134" stroke-width="12" fill="none">
+  <rect width="1200" height="900" fill="#f0dcb6"/>
+  <rect x="36" y="36" width="1128" height="828" fill="none" stroke="#c98f5f" stroke-width="2" stroke-dasharray="14 10"/>
+  <g stroke="#d8c49a" stroke-width="12" fill="none">
     <path d="M-20 640 C 240 560, 420 700, 700 600 S 1080 520, 1240 580"/>
     <path d="M150 -20 C 220 240, 120 420, 260 560 S 340 780, 300 940"/>
     <path d="M760 -20 C 820 200, 700 360, 860 500 S 960 760, 900 940"/>
   </g>
-  <path d="M-20 760 C 260 700, 520 820, 780 740 S 1100 680, 1240 720" stroke="#4a6b5a" stroke-width="18" fill="none"/>
+  <path d="M-20 760 C 260 700, 520 820, 780 740 S 1100 680, 1240 720" stroke="#7fb3ad" stroke-width="18" fill="none"/>
   <g transform="translate(600,400)">
-    <path d="M0 -60 C 34 -60 60 -34 60 0 C 60 38 0 86 0 86 C 0 86 -60 38 -60 0 C -60 -34 -34 -60 0 -60 Z" fill="#c29a52"/>
-    <circle cx="0" cy="0" r="20" fill="#2a3a26"/>
+    <path d="M0 -60 C 34 -60 60 -34 60 0 C 60 38 0 86 0 86 C 0 86 -60 38 -60 0 C -60 -34 -34 -60 0 -60 Z" fill="#b94e3f"/>
+    <circle cx="0" cy="0" r="20" fill="#f0dcb6"/>
   </g>
-  <text x="600" y="800" text-anchor="middle" font-family="'Golos Text','Segoe UI',Arial,sans-serif" font-size="30" letter-spacing="4" fill="#c9ccbd">ЗДЕСЬ БУДЕТ КАРТА ЯНДЕКС</text>
+  <text x="600" y="800" text-anchor="middle" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="30" letter-spacing="4" fill="#6d4a2c">ЗДЕСЬ БУДЕТ КАРТА ЯНДЕКС</text>
 </svg>

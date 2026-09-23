@@ -1,11 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1333" role="img" aria-label="Пустой слот фото, 3 к 4">
-  <rect width="1000" height="1333" fill="#2a3a26"/>
-  <rect x="36" y="36" width="928" height="1261" fill="none" stroke="#4a5c40" stroke-width="2" stroke-dasharray="14 10"/>
-  <g transform="translate(500,590)" fill="none" stroke="#c29a52" stroke-width="6" stroke-linejoin="round">
+  <defs>
+    <linearGradient id="sand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3ddb8"/>
+      <stop offset="1" stop-color="#e0b184"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1333" fill="url(#sand)"/>
+  <rect x="36" y="36" width="928" height="1261" fill="none" stroke="#c98f5f" stroke-width="2" stroke-dasharray="14 10"/>
+  <g transform="translate(500,590)" fill="none" stroke="#b94e3f" stroke-width="6" stroke-linejoin="round">
     <rect x="-78" y="-50" width="156" height="108" rx="12"/>
     <path d="M-36 -50 l14 -24 h44 l14 24"/>
     <circle cx="0" cy="4" r="32"/>
   </g>
-  <text x="500" y="770" text-anchor="middle" font-family="'Golos Text','Segoe UI',Arial,sans-serif" font-size="34" letter-spacing="4" fill="#c9ccbd">ФОТО ЗАМЕНИТЬ</text>
-  <text x="500" y="822" text-anchor="middle" font-family="'Golos Text','Segoe UI',Arial,sans-serif" font-size="24" fill="#9ba392">3 к 4, от 1000 px по ширине</text>
+  <text x="500" y="770" text-anchor="middle" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="34" letter-spacing="4" fill="#6d4a2c">ФОТО ЗАМЕНИТЬ</text>
+  <text x="500" y="822" text-anchor="middle" font-family="'Manrope','Segoe UI',Arial,sans-serif" font-size="24" fill="#9a744c">3 к 4, от 1000 px по ширине</text>
 </svg>

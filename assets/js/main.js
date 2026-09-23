@@ -147,6 +147,69 @@
   var year = document.querySelector("[data-year]");
   if (year) year.textContent = String(new Date().getFullYear());
 
+  var prefillTarget = document.querySelector("[data-prefill-target]");
+  if (prefillTarget) {
+    document.querySelectorAll("[data-prefill]").forEach(function (link) {
+      link.addEventListener("click", function () {
+        var wanted = link.getAttribute("data-prefill");
+        Array.prototype.forEach.call(prefillTarget.options, function (option) {
+          if (option.text.indexOf(wanted) === 0) {
+            prefillTarget.value = option.value || option.text;
+          }
+        });
+      });
+    });
+  }
+
+  var slider = document.querySelector("[data-reviews-slider]");
+  if (slider) {
+    var slides = slider.querySelectorAll(".review-slide");
+    var dots = slider.querySelectorAll(".reviews__dot");
+    var current = 0;
+    var timer = null;
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    function showSlide(i) {
+      current = (i + slides.length) % slides.length;
+      slides.forEach(function (slide, k) {
+        slide.classList.toggle("is-active", k === current);
+      });
+      dots.forEach(function (dot, k) {
+        dot.classList.toggle("is-active", k === current);
+        dot.setAttribute("aria-current", k === current ? "true" : "false");
+      });
+    }
+
+    function startRotation() {
+      if (timer || reduceMotion.matches) return;
+      timer = window.setInterval(function () {
+        showSlide(current + 1);
+      }, 6000);
+    }
+
+    function stopRotation() {
+      if (timer) {
+        window.clearInterval(timer);
+        timer = null;
+      }
+    }
+
+    dots.forEach(function (dot, k) {
+      dot.addEventListener("click", function () {
+        showSlide(k);
+        stopRotation();
+        startRotation();
+      });
+    });
+
+    slider.addEventListener("mouseenter", stopRotation);
+    slider.addEventListener("mouseleave", startRotation);
+    slider.addEventListener("focusin", stopRotation);
+    slider.addEventListener("focusout", startRotation);
+
+    startRotation();
+  }
+
   var topBtn = document.querySelector("[data-to-top]");
 
   if (topBtn) {
